@@ -28,6 +28,7 @@ public class GWTBookDownload implements EntryPoint {
 	private static final String SERVER_ERROR = "An error occurred while "
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
+	
 
 	/**
 	 * Create a remote service proxy to talk to the server-side Greeting service.
@@ -38,6 +39,8 @@ public class GWTBookDownload implements EntryPoint {
 	/**
 	 * This is the entry point method.
 	 */
+	
+	private BooksUI books=new BooksUI();
 	public void onModuleLoad() {
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
@@ -49,10 +52,11 @@ public class GWTBookDownload implements EntryPoint {
 
 		// Add the nameField and sendButton to the RootPanel
 		// Use RootPanel.get() to get the entire body element
-		RootPanel.get("nameFieldContainer").add(nameField);
-		RootPanel.get("sendButtonContainer").add(sendButton);
-		RootPanel.get("errorLabelContainer").add(errorLabel);
-
+		//RootPanel.get("nameFieldContainer").add(nameField);
+		//RootPanel.get("sendButtonContainer").add(sendButton);
+		//RootPanel.get("errorLabelContainer").add(errorLabel);
+		
+		RootPanel.get().add(books);
 		// Focus the cursor on the name field when the app loads
 		nameField.setFocus(true);
 		nameField.selectAll();

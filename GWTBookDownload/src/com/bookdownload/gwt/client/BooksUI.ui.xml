@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	</ui:style>
+	<g:TabLayoutPanel barUnit='EM' barHeight='3'>
+		<g:tab>
+			<g:header size='7'>
+				<b>HTML</b>
+				header
+			</g:header>
+			<g:Label>able</g:Label>
+		</g:tab>
+		<g:tab>
+			<g:customHeader size='7'>
+				<g:Label>Custom header</g:Label>
+			</g:customHeader>
+			<g:Label>baker</g:Label>
+		</g:tab>
+	</g:TabLayoutPanel>
+
+</ui:UiBinder> 

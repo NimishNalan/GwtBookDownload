@@ -63,6 +63,7 @@
 						<li class="active"><a id="tab_author" href="#panel-687068"
 							data-toggle="tab"> Add Author </a></li>
 						<li><a href="#panel-784203" data-toggle="tab">Add Book</a></li>
+						<li><a href="#panel-784204" data-toggle="tab">Update Book</a></li>
 
 					</ul>
 					<div class="tab-content">
@@ -71,17 +72,13 @@
 								<table>
 									<tr>
 										<td><b>Author Name:</b></td>
-										<td><input id="txt_author_name" type="text"></td>
+										<td id="txt_author_name"></td>
 									</tr>
 
 
 									<tr>
-										<td>
-											<button id="btn_reset">Reset</button>
-										</td>
-										<td>
-											<button id="btn_submit">Submit</button>
-										</td>
+										<td id="btn_reset"></td>
+										<td id="btn_submit"></td>
 									</tr>
 								</table>
 
@@ -94,32 +91,37 @@
 								<table>
 									<tr>
 										<td><b>Author Name:</b></td>
-										<td><select name="author">
-												<option value="author1">Author Name1</option>
-												<option value="author2">Author Name2</option>
-												<option value="author3">Author Name3</option>
-												<option value="author4">Author Name4</option>
-										</select></td>
+										<td id="list_author"></td>
 									</tr>
 
 									<tr>
-										<td>
-											<b>ISBN:</b>
-										</td>
-										<td>
-											<input id="txt_isbn"></input>
-										</td>
+										<td><b>ISBN:</b></td>
+										<td id="txt_isbn"></td>
 									</tr>
 
-
+									<tr>
+										<td><b>Book Name:</b></td>
+										<td id="txt_book_name"></td>
+									</tr>
 
 									<tr>
-										<td>
-											<button id="btn_reset">Reset</button>
-										</td>
-										<td>
-											<button id="btn_submit">Submit</button>
-										</td>
+										<td><b>Publisher Name:</b></td>
+										<td id="txt_publisher_name"></td>
+									</tr>
+
+									<tr>
+										<td><b>Publishing Date:</b></td>
+										<td id="date_picker"></td>
+									</tr>
+
+									<tr>
+										<td><b>Book Category:</b></td>
+										<td id="list_book_category"></td>
+									</tr>
+
+									<tr>
+										<td id="btn_book_reset"></td>
+										<td id="btn_book_submit"></td>
 									</tr>
 								</table>
 
@@ -127,6 +129,53 @@
 
 							</form>
 						</div>
+
+
+						<div class="tab-pane" id="panel-784204">
+							<form>
+								<table>
+									<tr>
+										<td><b>Author Name:</b></td>
+										<td id="update_list_author"></td>
+									</tr>
+
+									<tr>
+										<td><b>ISBN:</b></td>
+										<td id="update_txt_isbn"></td>
+									</tr>
+
+									<tr>
+										<td><b>Book Name:</b></td>
+										<td id="update_txt_book_name"></td>
+									</tr>
+
+									<tr>
+										<td><b>Publisher Name:</b></td>
+										<td id="update_txt_publisher_name"></td>
+									</tr>
+
+									<tr>
+										<td><b>Publishing Date:</b></td>
+										<td id="update_date_picker"></td>
+									</tr>
+
+									<tr>
+										<td><b>Book Category:</b></td>
+										<td id="update_list_book_category"></td>
+									</tr>
+
+									<tr>
+										<td id="update_btn_book_reset"></td>
+										<td id="update_btn_book_submit"></td>
+									</tr>
+								</table>
+
+
+
+							</form>
+						</div>
+
+
 					</div>
 				</div>
 			</div>
